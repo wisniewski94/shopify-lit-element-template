@@ -1,0 +1,7 @@
+package.json
+package-lock.json
+index*.js
+index.js
+tsconfig.json
+/node_modules
+/src
