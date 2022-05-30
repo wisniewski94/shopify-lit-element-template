@@ -9,6 +9,8 @@ import path from 'path';
 import {
   rollup, watch
 } from 'rollup';
+import nodeResolve from '@rollup/plugin-node-resolve';
+
 
 const outputOptions = {
   dir: 'assets',
@@ -27,6 +29,7 @@ const inputOptions = {
   external: ['lit', 'lit/decorators.js'],
   perf: true,
   plugins: [
+    nodeResolve(),
     minifyHTML.default(),
     terser({
       ecma: 2020,

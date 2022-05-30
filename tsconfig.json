@@ -2,5 +2,10 @@
   "compilerOptions": {
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
+    "module": "esnext",
   },
+  "include": [
+    "src/**/*.ts",
+    "node_modules/"
+  ]
 }
